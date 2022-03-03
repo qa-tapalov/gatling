@@ -1,0 +1,10 @@
+{
+  "simulation": "com.gatling.tests.KingBird",
+  "simulationId": "kingbird",
+  "start": 1646311232756,
+  "description": "1",
+  "scenarios": ["KingBird"],
+  "assertions": [
+
+  ]
+}
