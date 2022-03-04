@@ -22,31 +22,7 @@ val httpConf = http.baseUrl("https://kingbird.ru/")
       .exec(Requests.getAboutUs)
       .exec(Requests.getCareer)
       .exec(Requests.getContacts)
-  setUp(scn.inject(constantUsersPerSec(1) during (3 seconds)).protocols(httpConf))
+  setUp(scn.inject(constantUsersPerSec(1) during (1 seconds)).protocols(httpConf))
 
 }
-object Requests {
-  val getPageMain = exec(http("getPageMain")
-    .get("/")
-    .check(status.is(200))
-  )
 
-
-  val getOurProjects = exec(http("getOurProjects")
-    .get("/projects")
-    .check(status.is(200))
-  )
-
-  val getAboutUs = exec(http("About Us")
-    .get("/about")
-    .check(status.is(200)))
-
-  val getCareer = exec(http("Career")
-    .get("/career")
-    .check(status.is(200)))
-
-  val getContacts = exec(http("Contacts")
-  .get("/contacts")
-    .check(status.is(200))
-  )
-}

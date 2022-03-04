@@ -1,6 +1,0 @@
-RUN	com.gatling.tests.OrangeHrm	orangehrm	1646288387076	123	3.6.1
-ERROR	request_0: Failed to build request: No baseUrl defined but provided url is relative : / 	1646288388981
-USER	OrangeHrm	START	1646288388969
-ERROR	request_1: Failed to build request: No baseUrl defined but provided url is relative : /index.php/auth/validateCredentials 	1646288423997
-ERROR	request_2: Failed to build request: No baseUrl defined but provided url is relative : /index.php/dashboard/employeeDistribution 	1646288424999
-USER	OrangeHrm	END	1646288425008
